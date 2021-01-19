@@ -5,16 +5,30 @@ class TableComponent extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { imageData: "", yearValue: "", monthValue: "" }
     }
 
 
     render() {
+
+        let listOfGrids="";
+        if(this.props.propValue){
+             listOfGrids = Array.from(this.props.propValue.values()).map((item, index) => {
+                return (
+                    <tr>
+                        <td>Photo {index +1}</td>
+                        <td>{item.id}</td>
+                        <td><img className="image-div table" src={item.thumbnailUrl} alt="image"/></td>
+                        <td>{item.title}</td>
+                    </tr>
+                )
+              });
+        }
+
         return (
             <div  >
                 <table>
                     <tr>
-                        Company
+                        <th>Company</th>
                     </tr>
                     <tr>
                         <th>Photo</th>
@@ -22,7 +36,7 @@ class TableComponent extends React.Component {
                         <th>URL</th>
                         <th>Title</th>
                     </tr>
-                    
+                    {listOfGrids}
                 </table>
             </div>
 
