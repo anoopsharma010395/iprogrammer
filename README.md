@@ -1,10 +1,9 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Follow below mentioned steps to use the application.
+1. Do 'npm install' inside iprogammer directory.
+2 After npm install finishes, do 'npm start' in the same directory.
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
