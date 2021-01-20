@@ -25,11 +25,10 @@ class TableComponent extends React.Component {
         }
 
         return (
-            <div  >
+            <div  className="border-1px table-div">
+                <div class="font-bold">Company</div>
                 <table>
-                    <tr>
-                        <th>Company</th>
-                    </tr>
+                    
                     <tr>
                         <th>Photo</th>
                         <th>Id</th>

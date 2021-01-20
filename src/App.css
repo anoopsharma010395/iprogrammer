@@ -1,11 +1,21 @@
 .App {
   text-align: center;
 }
+.body{
+  margin: 9px;
+  padding: 9px;
+}
+.App-header{
+  background-color: white;
+  font-size: large;
+  font-weight: bold;
+  margin: 9px;
+}
 
 .grid-3boxes{
   display: grid;
   grid-template-columns: repeat(3, minmax(140px, 1fr));
-  grid-gap: 18px
+  grid-gap: 18px;
 }
 .boxes{
   border: 1px solid black;
@@ -17,6 +27,7 @@
   justify-content: center;
   overflow-wrap: anywhere;
   padding: 9px;
+  background-color: white;
 }
 .image-div{
   height: 30px;
@@ -26,17 +37,38 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  border-spacing: 1px;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid black;
   padding: 8px;
+  border-bottom: none;
 }
-tr{
-  border: 1px solid #dddddd;
+th:nth-child(4) {
+  border-right: 0px;
+}
+td,th:nth-child(1) {
+  border-left: 0px;
+}
+
+.header-row
+{
+  width:100%;
+  
 }
 .image-div-table
 {
   height: 20px;
   width: 80px;
+}
+.border-1px{
+  border:1px solid black;
+}
+.table-div{
+  margin:9px;
+  background-color: white;
+}
+.font-bold{
+  font-weight: bold;
 }
